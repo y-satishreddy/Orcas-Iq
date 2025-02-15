@@ -27,11 +27,46 @@ A modern and responsive **Institute Website** that showcases available courses, 
 
 ## 📦 Installation & Setup  
 Follow these steps to run the project locally:  
-```sh
-# Clone the repository
+- Clone the repository
 git clone https://github.com/y-satishreddy/Orcas-Iq.git
-
-# Navigate to the project directory
+- Navigate to the project directory
 cd Orcas-Iq
+- Open index.html in a browser
+(For better performance, use a local server like VS Code Live Server.)
 
-# Open index.html in a browser
+📧 Contact Form Setup (EmailJS)
+- Sign up on EmailJS
+- Create a new Email Service
+- Generate your Service ID, Template ID, and User ID
+- Update emailjs.send function inside contact.js
+
+JS - Code Snippet :
+
+emailjs.send("your_service_id", "your_template_id", formData, "your_user_id")
+  .then(response => console.log("Email sent!", response))
+  .catch(error => console.error("Error:", error));
+ 
+Save and test the contact form
+
+🚀 Deployment
+The website is deployed on Netlify. To deploy changes:
+
+git add .
+git commit -m "Updated website content"
+git push origin main
+
+Netlify will automatically deploy the latest changes.
+
+🤝 Contributing
+Contributions are welcome! Feel free to fork the repository, make improvements, and submit a Pull Request (PR).
+
+📄 License
+🚨 This project is not licensed. The design and development are original work by Satish Reddy.
+
+📬 Contact
+If you have any questions or suggestions, reach out:
+📧 Email: (Add your email here if you want to)
+🔗 GitHub: y-satishreddy
+🔗 Website: Orcas-IQ
+
+💡 Like this project? Give it a ⭐ on GitHub!
