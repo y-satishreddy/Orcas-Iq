@@ -1,0 +1,1090 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orcas-IQ</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <section id="main-header-section" class="main-body-section">
+        <!-- Header Section -->
+        <section class="top-header-section">
+            <div class="header-container">
+                <header class="main-header" id="site-header">
+                    <div class="logo-container">
+                        <img src="Assets/Logo.jpeg" alt="Logo Error" class="site-logo">
+                    </div>
+                    <nav class="nav-buttons">
+                        <a href="#main-header-section" class="nav-link">Home</a>
+                        <a href="#about-section" class="nav-link">About Us</a>
+                        <a href="#course-section" class="nav-link">Courses</a>
+                        <a href="#contact-section" class="nav-link contact-button">Contact Now</a>
+                    </nav>
+                    <div class="menu-icon">&#9776;</div>
+                    <div class="menu-close">&#10005;</div>
+                </header>
+            </div>
+        </section>
+    </section>
+    <!-- Page Sections -->
+    <section id="banner-section" class="banner-area">
+        <section class="banner">
+            <div class="content">
+
+                <h1 class="quote">Every great analyst <br> started with one class. Let yours begin here.</h1>
+
+                <a href="#contact-section" class="nav-link contact-button enroll-btn">Enroll Now</a>
+            </div>
+
+        </section>
+    </section>
+
+    <section id="about-section" class="about-area">
+        <section class="about">
+            <div class="about-part-1">
+                <h3 class="text-style text-style-2">RAHUL SINGAM</h3>
+                <p><i class="text-style">Co Founder & CEO</i></p>
+                <h1 class="text-style-1 text-style">WHY US</h1>
+                <p class="text-style">At Orcas IQ, we are redefining education delivery with innovative digital learning solutions tailored to empower both students and working professionals. Our platform emphasizes personalized learning through interactive courses, self-paced modules, and flexible timetables, enabling learners to succeed anytime, anywhere. Our mission is to close the education gap and unlock every learner’s potential. We specialize in training for Data Analytics, Data Science, and Digital Marketing, helping you acquire in-demand skills to stay competitive in today’s fast-paced world. Whether you aim to focus on a single skill or develop a comprehensive skill set, we offer customized individual and bundled training options. With a focus on industry-relevant, hands-on learning, we prepare you to excel in your chosen career path. Our expert instructors provide mentorship to ensure a seamless learning journey. Start your journey today and take a step closer to your dream career. Have questions? Contact us at <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=orcasiq@gmail.com">orcasiq@gmail.com </a> or <a target="_blank" href="tel:+916305829214">+91-6305829214</a>. Join us in revolutionizing education and stay updated on our latest offerings!</p>
+            </div>
+            <div class="about-part-2"><img src="Assets/pexels-photo-5081971.jpeg" alt="Image error" class="about-image">
+            </div>
+        </section>
+    </section>
+    <section id="course-section" class="courses-area">
+        <div class="unique-main-container" id="mainContainer">
+            <h1>Offered Courses</h1>
+            <div class="unique-course-container" id="courseContainer">
+                <div class="unique-course-card">
+                    <img src="Assets/pexels-goumbik-590022 copy.jpg" alt="Data Analytics">
+                    <h2>Data Analytics</h2>
+                    <button onclick="dataAnalytics()" class="course-view">View Course</button>
+                    <a href="#contact-section" class="course-view">Enroll Now</a>
+                </div>
+                <div class="unique-course-card">
+                    <img src="Assets/pexels-goumbik-669610 (3).jpg" alt="Data Science">
+                    <h2>Data Science</h2>
+                    <button onclick="viewCourse()" class="course-view">View Course</button>
+                    <a href="#contact-section" class="course-view">Enroll Now</a>
+                </div>
+                <div class="unique-course-card">
+                    <img src="Assets/DM.png" alt="Digital Marketing">
+                    <h2>Digital Marketing</h2>
+                    <button class="course-view" style="color: yellow;">Up-Coming Course</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="Data-Analytics" style="display: none;" id="data-analytics">
+            <div class="pop-up-banner">
+                <div class="container">
+                    <div class="cross-div">
+                        <button class="cross-icon new-cross-style" id="cross-icon-x" onclick="closeOverlay('scienceOverlay')">
+                            <span class="cross-icon-mar">&times;</span>
+                        </button>
+                        
+                    </div>
+                    <div class="info-form">
+                        <div class="info-section">
+                            <h1>Orcas IQ's Data Analytics Program -- Enroll Now for High-Quality, Affordable Data Analytics Training.</h1>
+                        </div>
+                        <div class="form-section">
+                            <h2>Register Now</h2>
+                            <form id="enrollment-form">
+                              <!-- Changed form ID to "enrollment-form" to match the JavaScript -->
+                              <div class="form-group">
+                                <label for="name-1">Name</label>
+                                <input type="text" id="name-1" name="name" placeholder="Enter your name" required />
+                              </div>
+                              <div class="form-group">
+                                <label for="email-1">Email</label>
+                                <input type="email" id="email-1" name="email" placeholder="Enter your email" required />
+                              </div>
+                              <div class="form-group">
+                                <label for="mobile-1">Mobile Number</label>
+                                <input type="tel" id="mobile-1" name="mobile" placeholder="Enter your mobile number" required />
+                              </div>
+                              <div class="form-group">
+                                <label for="course">Type of Course</label>
+                                <select id="course" name="typeOfCourse" required>
+                                  <option value="" disabled selected>Select Your Profession</option>
+                                  <option value="DA - Self Paced">DA - Self Paced</option>
+                                  <option value="DA - Live Sessions">DA - Live Sessions</option>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <label for="type">Profession</label>
+                                <select id="type" name="profession" required>
+                                  <option value="" disabled selected>Select Your Profession</option>
+                                  <option value="Fresher">Fresher</option>
+                                  <option value="Non-IT">Non-IT</option>
+                                  <option value="Experienced IT Professional">Experienced IT Professional</option>
+                                  <option value="Student">Student</option>
+                                  <option value="Career-Gap">Career-Gap</option>
+                                </select>
+                              </div>
+                              <button type="submit" class="submit-btn">Submit</button>
+                            </form>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-container">
+                <div class="benefits-container">
+                    <div class="benefits-heading">
+                        Course <span>Benefits</span>
+                    </div>
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <img src="Assets/portfolio.png" alt="Diverse Project Portfolio">
+                            <p>Diverse Project Portfolio</p>
+                        </div>
+                        <div class="benefit-card">
+                            <img src="Assets/programming.png" alt="Practice Exercises">
+                            <p>Practice Exercises</p>
+                        </div>
+                        <div class="benefit-card">
+                            <img src="Assets/doubt.png" alt="Doubt Clearing">
+                            <p>Doubt Clearing Sessions</p>
+                        </div>
+                        <div class="benefit-card">
+                            <img src="Assets/engineer.png" alt="Coding Lab">
+                            <p>Job Training</p>
+                        </div>
+                        <div class="benefit-card">
+                            <img src="Assets/curriculum.png" alt="Curriculum">
+                            <p>Industry Oriented Curriculum</p>
+                        </div>
+                        <div class="benefit-card">
+                            <img src="Assets/certificate.png" alt="Certificate">
+                            <p>Course Completion Certificate</p>
+                        </div>
+                        <div class="benefit-card">
+                            <img src="Assets/project-management.png" alt="Capstone Project">
+                            <p>Capstone Projects</p>
+                        </div>
+                        <div class="benefit-card">
+                            <img src="Assets/classroom.png" alt="Real-world Training">
+                            <p>Real-World Training</p>
+                        </div>
+                        <div class="benefit-card">
+                            <img src="Assets/network.png" alt="Networking">
+                            <p>Networking Building</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section class="module-container">
+                <h2>End-to-End Training with  <span>Data Analytics Tools</span></h2>
+                <div class="module-grid">
+                    <div class="module-item">
+                        <img src="Assets/ADExcel.png" alt="Calculus" />
+                    </div>
+                    <div class="module-item">
+                        <img src="Assets/SQL.png" alt="Keras" />
+                    </div>
+                    <div class="module-item">
+                        <img src="Assets/PowerBI-DA.png" alt="Scikit-Learn Logo" />
+                    </div>
+                    
+                    <div class="module-item">
+                        <img src="Assets/tableau.png" alt="Flask Logo" />
+                    </div>
+                    <div class="module-item">
+                        <img src="Assets/DS-python.png" alt="Matplotlib Logo" />
+                    </div>
+                    <div class="module-item">
+                        <img src="Assets/statistics.png" alt="PyTorch Logo" />
+                    </div>
+                    <div class="module-item">
+                        <img src="Assets/numpy.png" alt="PyTorch Logo" />
+                    </div>
+                    <div class="module-item">
+                        <img src="Assets/Pandas.png" alt="PyTorch Logo" />
+                    </div>
+                    <div class="module-item">
+                        <img src="Assets/matplotlib.png" alt="PyTorch Logo" />
+                    </div>
+                    <div class="module-item">
+                        <img src="Assets/seaborn.png" alt="PyTorch Logo" />
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="container-job">
+                <div class="job-heading">Job Training Program</div>
+                <div class="job-features">
+                    <div class="job-feature">
+                        <img src="Assets/leadership-skills.png" alt="Soft Skills">
+                        <p>Soft Skills Sessions</p>
+                    </div>
+                    <div class="job-feature">
+                        <img src="Assets/aptitude.png" alt="Aptitude Training">
+                        <p>Aptitude Training</p>
+                    </div>
+                    <div class="job-feature">
+                        <img src="Assets/resume (1).png" alt="Resume Building">
+                        <p>Resume Building Sessions</p>
+                    </div>
+                    <div class="job-feature">
+                        <img src="Assets/linkedin.png" alt="LinkedIn Profile">
+                        <p>LinkedIn Profile Building</p>
+                    </div>
+                    <div class="job-feature">
+                        <img src="Assets/interview.png" alt="Mock Interviews">
+                        <p>Mock Interviews</p>
+                    </div>
+                    <div class="job-feature">
+                        <img src="Assets/job-offer.png" alt="Job Assistance">
+                        <p>Network Building</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div> <!-- Main Heading -->
+                <h1 class="main-heading">Data Analytics Course Pricing</h1>
+                <p class="subheading">Choose the best option that suits your learning style</p>
+
+                <!-- Pricing Container -->
+                <div class="pricing-container">
+                    <!-- Left Section -->
+                    <div class="pricing-left">
+                        <h2>Course Details</h2>
+                        <div class="pricing-option">
+                            <h3>Self-Paced</h3>
+                            <p class="price">₹ 12,999/-</p>
+                        </div>
+                        <div class="pricing-option">
+                            <h3>Live Sessions</h3>
+                            <p class="price"><s>₹ 49,999</s> / ₹ 27,999</p>
+                        </div>
+                    </div>
+
+                    <!-- Separator -->
+                    <div class="separator"></div>
+
+                    <!-- Right Section -->
+                    <div class="pricing-right">
+                        <h3>EMI Options Available</h3>
+                        <p class="emi-info">Flexible EMI options are available for both<br> Self-Paced and Live
+                            Sessions.
+                        </p>
+                        <a href="#data-analytics" class="nav-link contact-button">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="body-1">
+                <div class="container-1">
+                    <h1>Why Get Data Analytics Certification From Orcas IQ?</h1>
+                    <div class="features">
+                        <div class="feature">
+                            <div class="icon">
+                                <img src="Assets/learning.png" alt="Hands-On Learning">
+                            </div>
+                            <h2>Hands-On Learning</h2>
+                            <p>
+                                Work on real-world data science projects and gain practical experience to tackle
+                                industry
+                                challenges
+                                effectively.
+                            </p>
+                        </div>
+                        <div class="feature">
+                            <div class="icon">
+                                <img src="Assets/prospecting.png" alt="Advanced Analytics">
+                            </div>
+                            <h2>Advanced Analytics</h2>
+                            <p>
+                                Master data science techniques like predictive modeling, machine learning, and
+                                statistical
+                                analysis.
+                            </p>
+                        </div>
+                        <div class="feature">
+                            <div class="icon">
+                                <img src="Assets/competence (1).png" alt="Customizable Skills">
+                            </div>
+                            <h2>Customizable Skills</h2>
+                            <p>
+                                Learn versatile tools and techniques that can be applied to diverse industries like
+                                healthcare,
+                                finance, and
+                                more.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <div class="feature">
+                            <div class="icon">
+                                <img src="Assets/efficacy.png" alt="Boosted Efficiency">
+                            </div>
+                            <h2>Boosted Efficiency</h2>
+                            <p>
+                                Use data-driven insights to optimize decision-making and enhance organizational
+                                performance.
+                            </p>
+                        </div>
+                        <div class="feature">
+                            <div class="icon">
+                                <img src="Assets/discussion (1).png" alt="Expert Mentorship">
+                            </div>
+                            <h2>Expert Mentorship</h2>
+                            <p>
+                                Learn directly from experienced industry professionals who guide you throughout the
+                                certification journey.
+                            </p>
+                        </div>
+                        <div class="feature">
+                            <div class="icon">
+                                <img src="Assets/career-path.png" alt="Career Growth">
+                            </div>
+                            <h2>Career Growth</h2>
+                            <p>
+                                Prepare for high-demand roles such as Data Analyst or Business Analyst with
+                                impactful
+                                solutions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dacb-container">
+                <div class="dacb-heading">
+                    Data Analytics Certification <span>Benefits</span>
+                </div>
+                <div class="dacb-description">
+                    The global data analytics market is projected to grow from USD 30.74 billion in 2023 to USD 68.09 billion by 2032
+                    . Data analytics certifications equip professionals with critical skills, 
+                    unlocking career opportunities in this fast-growing and high-demand field.
+                </div>
+
+                <div class="dacb-content">
+                    <!-- Chart Section -->
+                    <div class="dacb-chart-container">
+                        <h3>Annual Salary</h3>
+                        <img src="Assets/DA_Graph.png" alt="Salary Chart">
+                    </div>
+                    <!-- Hiring Companies Section -->
+                    <div class="dacb-companies-container">
+                        <h3>Hiring Companies</h3>
+                        <hr>
+                        <div class="dacb-companies-list">
+                            <div class="dacb-company-logo"><img src="Assets/hring-companies.png" alt="Amazon"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dacb-footer">
+                    Source: Industry Reports
+                </div>
+            </div>
+
+            <div class="certificate-container">
+                <div class="certificate-content">
+                    <img src="Assets/certificate-main.jpg" alt="Sample Certificate" class="certificate-image">
+                    <div class="button-container">
+                        <a href="#data-analytics" class="nav-link contact-button">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="faq-section">
+                <h2 class="faq-title">Frequently Asked Questions (FAQs)</h2>
+                <div class="faq-item">
+                    <button class="faq-question">What is the difference between Data Analytics and Data
+                        Science?<span class="arrow">&#9660;</span></button>
+                    <div class="faq-answer">
+                        <p>Data Analytics focuses on analyzing current and historical data to identify patterns and
+                            trends.<br><br>
+
+                            Data Science involves predictive modeling, machine learning, and artificial intelligence
+                            to make
+                            future
+                            predictions.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What are the prerequisites for learning Data Analytics and Data
+                        Science?<span class="arrow">&#9660;</span></button>
+                    <div class="faq-answer">
+                        <p>Your passion for learning is all we need — bring your curiosity, and we’ll transform it
+                            into
+                            expertise,
+                            ensuring you emerge as a skilled and confident professional!</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Are your courses beginner-friendly?<span
+                            class="arrow">&#9660;</span></button>
+                    <div class="faq-answer">
+                        <p>Yes, our courses are designed for all skill levels, from beginners with no prior
+                            experience to
+                            advanced
+                            learners looking to deepen their expertise.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What careers can I pursue after learning Data Analytics or Data
+                        Science?<span class="arrow">&#9660;</span></button>
+                    <div class="faq-answer">
+                        <p>You can explore roles like Data Analyst, Data Scientist, Business Analyst, Machine
+                            Learning
+                            Engineer, Data
+                            Engineer, and more.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Are the courses self-paced or instructor-led?<span
+                            class="arrow">&#9660;</span></button>
+                    <div class="faq-answer">
+                        <p>We offer both options. You can choose self-paced courses for flexibility or
+                            instructor-led
+                            sessions for
+                            personalized guidance.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Will I receive a certification upon completion?<span
+                            class="arrow">&#9660;</span></button>
+                    <div class="faq-answer">
+                        <p>Yes, upon successfully completing an exam and all the assignments of the course, you will
+                            receive
+                            a
+                            certification that can boost your resume.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How can I enroll in your courses?<span
+                            class="arrow">&#9660;</span></button>
+                    <div class="faq-answer">
+                        <p>Simply visit our website, choose a course and click on enroll button. We will contact
+                            you. or
+                            Contact us at
+                            <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=orcasiq@gmail.com">orcasiq@gmail.com </a> or <a target="_blank" href="tel:+916305829214">+91-6305829214.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="courseOverlay">
+            <div class="pop-up-banner">
+                <div class="container">
+                    <div class="cross-div">
+                        <button class="cross-icon" id="cross-icon-x" onclick="closeOverlay('scienceOverlay')">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="info-form">
+                        <div class="info-section">
+                            <h1>Orcas IQ's Data Science & AI Program -- Enroll Now for High-Quality, Affordable Data
+                                Science Training.</h1>
+                        </div>
+                        <div class="form-section">
+                            <h2>Register Now</h2>
+                            <form id="registration-form">
+                                <div class="form-group">
+                                  <label for="user-full-name">Name</label>
+                                  <input type="text" id="user-full-name" name="name" placeholder="Enter your name" required />
+                                </div>
+                                <div class="form-group">
+                                  <label for="user-email-address">Email</label>
+                                  <input type="email" id="user-email-address" name="email" placeholder="Enter your email" required />
+                                </div>
+                                <div class="form-group">
+                                  <label for="user-contact-number">Mobile Number</label>
+                                  <input type="tel" id="user-contact-number" name="mobile" placeholder="Enter your mobile number" required />
+                                </div>
+                                <div class="form-group">
+                                  <label for="course-option">Type of Course</label>
+                                  <select id="course-option" name="typeOfCourse" required>
+                                    <option value="" disabled selected>Select Your Course</option>
+                                    <option value="DS - Self Paced">DS - Self Paced</option>
+                                    <option value="DS - Live Sessions">DS - Live Sessions</option>
+                                  </select>
+                                </div>
+                                <div class="form-group">
+                                  <label for="user-profession">Profession</label>
+                                  <select id="user-profession" name="profession" required>
+                                    <option value="" disabled selected>Select Your Profession</option>
+                                    <option value="Fresher">Fresher</option>
+                                    <option value="Non-IT">Non-IT</option>
+                                    <option value="Experienced IT Professional">Experienced IT Professional</option>
+                                    <option value="Student">Student</option>
+                                    <option value="Career-Gap">Career-Gap</option>
+                                  </select>
+                                </div>
+                                <button type="submit" class="submit-btn" onclick="sendFormDetails()">Submit</button>
+                              </form>
+                              
+                          </div>
+                          
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-container">
+                <div class="benefits-container">
+                    <div class="benefits-heading">
+                        Course <span>Benefits</span>
+                    </div>
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <img src="Assets/portfolio.png" alt="Diverse Project Portfolio">
+                            <p>Diverse Project Portfolio</p>
+                        </div>
+                        <div class="benefit-card">
+                            <img src="Assets/programming.png" alt="Practice Exercises">
+                            <p>Practice Exercises</p>
+                        </div>
+                        <div class="benefit-card">
+                            <img src="Assets/doubt.png" alt="Doubt Clearing">
+                            <p>Doubt Clearing Sessions</p>
+                        </div>
+                        <div class="benefit-card">
+                            <img src="Assets/engineer.png" alt="Coding Lab">
+                            <p>Job Training</p>
+                        </div>
+                        <div class="benefit-card">
+                            <img src="Assets/curriculum.png" alt="Curriculum">
+                            <p>Industry Oriented Curriculum</p>
+                        </div>
+                        <div class="benefit-card">
+                            <img src="Assets/certificate.png" alt="Certificate">
+                            <p>Course Completion Certificate</p>
+                        </div>
+                        <div class="benefit-card">
+                            <img src="Assets/project-management.png" alt="Capstone Project">
+                            <p>Capstone Projects</p>
+                        </div>
+                        <div class="benefit-card">
+                            <img src="Assets/classroom.png" alt="Real-world Training">
+                            <p>Real-World Training</p>
+                        </div>
+                        <div class="benefit-card">
+                            <img src="Assets/network.png" alt="Networking">
+                            <p>Networking Building</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section class="module-container">
+                <h2>AI-Powered Data Tools<span> Included</span></h2>
+                <div class="module-grid">
+                    <div class="module-item">
+                        <img src="Assets/image-calculus.png" alt="Calculus" />
+                    </div>
+                    <div class="module-item">
+                        <img src="Assets/keras.png" alt="Keras" />
+                    </div>
+                    <div class="module-item">
+                        <img src="Assets/matplotlib.png" alt="Scikit-Learn Logo" />
+                    </div>
+                    <div class="module-item">
+                        <img src="Assets/DS-python.png" alt="Flask Logo" />
+                    </div>
+                    <div class="module-item">
+                        <img src="Assets/seaborn.png" alt="Matplotlib Logo" />
+                    </div>
+                    <div class="module-item">
+                        <img src="Assets/SQL.png" alt="PyTorch Logo" />
+                    </div>
+                    <div class="module-item">
+                        <img src="Assets/TensarFlow.png" alt="ChatGPT Logo" />
+                    </div>
+                    <div class="module-item">
+                        <img src="Assets/numpy.png" alt="DALL-E 2 Logo" />
+                    </div>
+                    <div class="module-item">
+                        <img src="Assets/Pandas.png" alt="LangChain Logo" />
+                    </div>
+                    <div class="module-item">
+                        <img src="Assets/plotly.png" alt="LangChain Logo" />
+                    </div>
+                    <div class="module-item">
+                        <img src="Assets/SLearn.png" alt="LangChain Logo" />
+                    </div>
+                    <div class="module-item">
+                        <img src="Assets/statistics.png" alt="LangChain Logo" />
+                    </div>
+                    <div class="module-item">
+                        <img src="Assets/ML.png" alt="LangChain Logo" />
+                    </div>
+                    <div class="module-item">
+                        <img src="Assets/jupiter.png" alt="LangChain Logo" />
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="container-job">
+                <div class="job-heading">Job Training Program</div>
+                <div class="job-features">
+                    <div class="job-feature">
+                        <img src="Assets/leadership-skills.png" alt="Soft Skills">
+                        <p>Soft Skills Sessions</p>
+                    </div>
+                    <div class="job-feature">
+                        <img src="Assets/aptitude.png" alt="Aptitude Training">
+                        <p>Aptitude Training</p>
+                    </div>
+                    <div class="job-feature">
+                        <img src="Assets/resume (1).png" alt="Resume Building">
+                        <p>Resume Building Sessions</p>
+                    </div>
+                    <div class="job-feature">
+                        <img src="Assets/linkedin.png" alt="LinkedIn Profile">
+                        <p>LinkedIn Profile Building</p>
+                    </div>
+                    <div class="job-feature">
+                        <img src="Assets/interview.png" alt="Mock Interviews">
+                        <p>Mock Interviews</p>
+                    </div>
+                    <div class="job-feature">
+                        <img src="Assets/job-offer.png" alt="Job Assistance">
+                        <p>Network Building</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div> <!-- Main Heading -->
+                <h1 class="main-heading">Data Science Course Pricing</h1>
+                <p class="subheading">Choose the best option that suits your learning style</p>
+
+                <!-- Pricing Container -->
+                <div class="pricing-container">
+                    <!-- Left Section -->
+                    <div class="pricing-left">
+                        <h2>Course Details</h2>
+                        <div class="pricing-option">
+                            <h3>Self-Paced</h3>
+                            <p class="price">₹ 14,999/-</p>
+                        </div>
+                        <div class="pricing-option">
+                            <h3>Live Sessions</h3>
+                            <p class="price"><s>₹ 59,999</s> / ₹ 29,999</p>
+                        </div>
+                    </div>
+
+                    <!-- Separator -->
+                    <div class="separator"></div>
+
+                    <!-- Right Section -->
+                    <div class="pricing-right">
+                        <h3>EMI Options Available</h3>
+                        <p class="emi-info">Flexible EMI options are available for both<br> Self-Paced and Live
+                            Sessions.
+                        </p>
+                        <a href="#courseOverlay" class="nav-link contact-button">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="body-1">
+                <div class="container-1">
+                    <h1>Why Get Data Science Certification From Orcas IQ?</h1>
+                    <div class="features">
+                        <div class="feature">
+                            <div class="icon">
+                                <img src="Assets/learning.png" alt="Hands-On Learning">
+                            </div>
+                            <h2>Hands-On Learning</h2>
+                            <p>
+                                Work on real-world data science projects and gain practical experience to tackle
+                                industry
+                                challenges
+                                effectively.
+                            </p>
+                        </div>
+                        <div class="feature">
+                            <div class="icon">
+                                <img src="Assets/prospecting.png" alt="Advanced Analytics">
+                            </div>
+                            <h2>Advanced Analytics</h2>
+                            <p>
+                                Master data science techniques like predictive modeling, machine learning, and
+                                statistical
+                                analysis.
+                            </p>
+                        </div>
+                        <div class="feature">
+                            <div class="icon">
+                                <img src="Assets/competence (1).png" alt="Customizable Skills">
+                            </div>
+                            <h2>Customizable Skills</h2>
+                            <p>
+                                Learn versatile tools and techniques that can be applied to diverse industries like
+                                healthcare,
+                                finance, and
+                                more.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <div class="feature">
+                            <div class="icon">
+                                <img src="Assets/efficacy.png" alt="Boosted Efficiency">
+                            </div>
+                            <h2>Boosted Efficiency</h2>
+                            <p>
+                                Use data-driven insights to optimize decision-making and enhance organizational
+                                performance.
+                            </p>
+                        </div>
+                        <div class="feature">
+                            <div class="icon">
+                                <img src="Assets/discussion (1).png" alt="Expert Mentorship">
+                            </div>
+                            <h2>Expert Mentorship</h2>
+                            <p>
+                                Learn directly from experienced industry professionals who guide you throughout the
+                                certification journey.
+                            </p>
+                        </div>
+                        <div class="feature">
+                            <div class="icon">
+                                <img src="Assets/career-path.png" alt="Career Growth">
+                            </div>
+                            <h2>Career Growth</h2>
+                            <p>
+                                Prepare for high-demand roles such as Data Scientist or Machine Learning Engineer with
+                                impactful
+                                solutions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dacb-container">
+                <div class="dacb-heading">
+                    Data Science Certification <span>Benefits</span>
+                </div>
+                <div class="dacb-description">
+                    The global data science platform market is expected to grow from USD 96.25 billion in 2023 to
+                    USD 776.86 billion by 2032, with a CAGR of 24.7%. Data science certifications provide essential
+                    skills,
+                    opening up career opportunities in this rapidly expanding industry.
+                </div>
+                <div class="dacb-content">
+                    <!-- Chart Section -->
+                    <div class="dacb-chart-container">
+                        <h3>Annual Salary</h3>
+                        <img src="Assets/DS-Analytics.png" alt="Salary Chart">
+                    </div>
+                    <!-- Hiring Companies Section -->
+                    <div class="dacb-companies-container">
+                        <h3>Hiring Companies</h3>
+                        <hr>
+                        <div class="dacb-companies-list">
+                            <div class="dacb-company-logo"><img src="Assets/hring-companies.png" alt="Amazon"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dacb-footer">
+                    Source: Industry Reports
+                </div>
+            </div>
+
+            <div class="certificate-container">
+                <div class="certificate-content">
+                    <img src="Assets/DataScience.png" alt="Sample Certificate" class="certificate-image">
+                    <div class="button-container">
+                        <a href="#courseOverlay" class="nav-link contact-button">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="faq-section">
+                <h2 class="faq-title">Frequently Asked Questions (FAQs)</h2>
+                <div class="faq-item">
+                    <button class="faq-question">What is the difference between Data Analytics and Data
+                        Science?<span class="arrow">&#9660;</span></button>
+                    <div class="faq-answer">
+                        <p>Data Analytics focuses on analyzing current and historical data to identify patterns and
+                            trends.<br><br>
+
+                            Data Science involves predictive modeling, machine learning, and artificial intelligence
+                            to make
+                            future
+                            predictions.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What are the prerequisites for learning Data Analytics and Data
+                        Science?<span class="arrow">&#9660;</span></button>
+                    <div class="faq-answer">
+                        <p>Your passion for learning is all we need — bring your curiosity, and we’ll transform it
+                            into
+                            expertise,
+                            ensuring you emerge as a skilled and confident professional!</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Are your courses beginner-friendly?<span
+                            class="arrow">&#9660;</span></button>
+                    <div class="faq-answer">
+                        <p>Yes, our courses are designed for all skill levels, from beginners with no prior
+                            experience to
+                            advanced
+                            learners looking to deepen their expertise.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What careers can I pursue after learning Data Analytics or Data
+                        Science?<span class="arrow">&#9660;</span></button>
+                    <div class="faq-answer">
+                        <p>You can explore roles like Data Analyst, Data Scientist, Business Analyst, Machine
+                            Learning
+                            Engineer, Data
+                            Engineer, and more.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Are the courses self-paced or instructor-led?<span
+                            class="arrow">&#9660;</span></button>
+                    <div class="faq-answer">
+                        <p>We offer both options. You can choose self-paced courses for flexibility or
+                            instructor-led
+                            sessions for
+                            personalized guidance.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Will I receive a certification upon completion?<span
+                            class="arrow">&#9660;</span></button>
+                    <div class="faq-answer">
+                        <p>Yes, upon successfully completing an exam and all the assignments of the course, you will
+                            receive
+                            a
+                            certification that can boost your resume.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How can I enroll in your courses?<span
+                            class="arrow">&#9660;</span></button>
+                    <div class="faq-answer">
+                        <p>Simply visit our website, choose a course and click on enroll button. We will contact
+                            you. or
+                            Contact us at
+                            <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=orcasiq@gmail.com">orcasiq@gmail.com </a> or <a target="_blank" href="tel:+916305829214">+91-6305829214.</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <section id="service-section" class="services-area">
+        <div class="services-body">
+            <section class="services-section">
+                <h1 class="section-title">Our Premium Services</h1>
+                <div class="services-container">
+                    <div class="service-card">
+                        <h2>01</h2>
+                        <h3>Corporate Training</h3><br>
+                        <p>Empower your workforce with tailored corporate training solutions to enhance productivity and
+                            drive business growth.</p>
+                    </div>
+                    <div class="service-card">
+                        <h2>02</h2>
+                        <h3>College Training</h3><br>
+                        <p>Equip students with industry-relevant skills through customized training programs designed to
+                            bridge the gap between academics and careers.</p>
+                    </div>
+                    <div class="service-card">
+                        <h2>03</h2>
+                        <h3>CRT Training</h3><br>
+                        <p>Prepare students for placement success with our comprehensive Campus Recruitment Training
+                            program, focusing on aptitude, communication, and interview skills.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <br><br>
+    
+
+    <section id="contact-section" class="contact-area">
+        <section class="contact-us">
+            <div class="contact-us-1">
+                <h1 class="heading-contact-us">Contact Us</h1><br>
+                <p class="contact-content">For enrollment or inquiries, we offer two types of courses: Self-Paced
+                    (recorded
+                    sessions) and Live Sessions.
+                    To enroll, simply complete the form by selecting your course type (Data Analytics or Data Science)
+                    and
+                    delivery mode (Self-Paced or Live). You can submit the form, call us, email us, or drop a text to
+                    get started.
+                    Feel free to contact us with any questions—we’re here to help! <br><br> <b style="color: black;">Mail : </b><a href="https://mail.google.com/mail/?view=cm&fs=1&to=orcasiq@gmail.com">orcasiq@gmail.com</a>
+                <br><b style="color: black;">Mobile : </b><a href="tel:+916305829214">+91 6305829214</a> </p><br><br>
+                <p>
+                    <div class="social-media">
+                        <div class="contact-icons">
+                            <a href="https://wa.me/6305829214" target="_blank" class="contact-links"><img src="Assets/whatsapp_3536479.png" alt="whatsapp error"
+                                    class="whatsapp-img"></a>
+                            <a href="https://www.linkedin.com/company/orcas-iq/?viewAsMember=true" class="contact-links" target="_blank"><img src="Assets/linkedin_3536569.png" alt="LinkedIn error"
+                                    class="whatsapp-img"></a>
+                            <a target="_blank" href="https://www.instagram.com/orcasiq_learningsimplified/" class="contact-links"><img src="Assets/instagram_3938052.png" alt="Instagram error" class="whatsapp-img" ></a>
+                            <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=orcasiq@gmail.com" class="contact-links"><img src="Assets/email_3694289.png" alt="Email error"
+                                    class="whatsapp-img"></a>
+                            </p>
+                        </div>
+                    </div>    
+                
+            </div><!-- Use the official, updated EmailJS CDN -->
+            <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            <div class="contact-us-2">
+              <h1 class="text-enroll heading-contact-us">Enroll-Now</h1>
+              <form id="unique-registration-form" class="enrollment-form">
+                <input id="unique-fullname" type="text" placeholder="Enter your full name" autocomplete="name" required />
+                <input id="unique-email" type="email" placeholder="Enter your email" autocomplete="email" required />
+                <input id="unique-phone" type="tel" placeholder="Enter your mobile number" autocomplete="tel" required />
+                <select id="unique-course" autocomplete="off" required>
+                  <option value="" disabled selected>Select your course</option>
+                  <option value="Data Analytics">Data Analytics</option>
+                  <option value="Data Science">Data Science</option>
+                </select>
+                <select id="unique-course-type" autocomplete="off" required>
+                  <option value="" disabled selected>Select course type</option>
+                  <option value="Self-Paced">Self-Paced</option>
+                  <option value="Live-Classes">Live-Classes</option>
+                </select>
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+            
+            <script>
+              // Initialize EmailJS
+              emailjs.init("FpZ4fDpI9uQ_9tlbk"); // Replace with your actual EmailJS public key
+            
+              // Function to handle form submission
+              function handleUniqueFormSubmission(event) {
+                // Prevent default form submission behavior
+                event.preventDefault();
+            
+                // Collect form data
+                const uniqueFullName = document.getElementById("unique-fullname").value.trim();
+                const uniqueEmail = document.getElementById("unique-email").value.trim();
+                const uniquePhone = document.getElementById("unique-phone").value.trim();
+                const uniqueCourse = document.getElementById("unique-course").value;
+                const uniqueCourseType = document.getElementById("unique-course-type").value;
+            
+                // Validate form inputs
+                if (!uniqueFullName || !uniqueEmail || !uniquePhone || !uniqueCourse || !uniqueCourseType) {
+                  alert("Please fill out all the fields!");
+                  return;
+                }
+            
+                // Prepare the email content
+                const uniqueFormDetails = `
+                  Full Name: ${uniqueFullName}
+                  Email: ${uniqueEmail}
+                  Phone: ${uniquePhone}
+                  Course: ${uniqueCourse}
+                  Course Type: ${uniqueCourseType}
+                `;
+            
+                // Debugging: Log form details
+                console.log("Form details to send:", uniqueFormDetails);
+            
+                // Send the form details using EmailJS
+                emailjs
+                  .send("service_f60rqcs", "template_3l8c026", {
+                    to_name: "Admin", // Replace with recipient's name if needed
+                    message: uniqueFormDetails,
+                  })
+                  .then(
+                    (response) => {
+                      alert("Your details have been sent successfully!");
+                      console.log("EmailJS SUCCESS:", response);
+            
+                      // Reset the form
+                      document.getElementById("unique-registration-form").reset();
+                    },
+                    (error) => {
+                      alert("Failed to send your details. Please try again.");
+                      console.error("EmailJS ERROR:", error);
+                    }
+                  );
+              }
+            
+              // Attach event listener to the form
+              document
+                .getElementById("unique-registration-form")
+                .addEventListener("submit", handleUniqueFormSubmission);
+            </script>
+            
+</div>
+              
+              <script>
+                // Initialize EmailJS with your public key
+                emailjs.init("c8z_7rpb5quxgOBeJ"); // Replace with your EmailJS public key
+              
+                // Function to send email
+                function sendEmail() {
+
+                  // Collect form data using IDs
+                  const name = document.getElementById("name-1").value.trim();
+                  const email = document.getElementById("email-1").value.trim();
+                  const mobile = document.getElementById("mobile-1").value.trim();
+                  const course = document.getElementById("course").value;
+                  const type = document.getElementById("type").value;
+              console.log(name);
+                  // Combine data into a single message string
+                  const message = name+" "+email+" "+mobile+ " "+ course+" "+type;
+              
+                  // Debugging: Log the message string to ensure it’s correct
+                  console.log("Message being sent:");
+                  console.log(message);
+              
+                  // Send the email using EmailJS
+                  emailjs
+                    .send("service_f60rqcs", "template_3l8c026", {
+                      to_name: "Admin", // Replace with recipient name if needed
+                      message: message, // Pass the combined message string
+                    })
+                    .then(
+                      (response) => {
+                        alert("Your details have been sent successfully!");
+                        console.log("SUCCESS:", response);
+                      },
+                      (error) => {
+                        alert("Failed to send your details. Please try again.");
+                        console.error("EmailJS Error:", error);
+                      }
+                    );
+                }
+              
+                // Attach event listener to form submission
+                document
+                  .getElementById("enrollment-form")
+                  .addEventListener("submit", function (event) {
+                    event.preventDefault(); // Prevent default form submission
+                    sendEmail(); // Trigger the email send function
+                  });
+              </script>
+              
+             </section>
+    </section>
+    
+    <script src="index.js"></script>
+    <script src="form.js"></script>
+</body>
+
+</html>
